@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>108694f8-2adf-4fa6-b93e-3643083a7c76</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Lab7_9</Name>
+    <RootNamespace>Lab7_9</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Controller\client_controller.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\movie_controller.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\rent_controller.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\client.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\movie.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\rent.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main.py" />
+    <Compile Include="Repository\client_repository.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\file_repository.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\movie_repository.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\rent_repository.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Repository\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\runTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\tests_controller.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\tests_domain.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\tests_repository.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\UI.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validators\client_validator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validators\movie_validator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validators\rent_validator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validators\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Tests\" />
+    <Folder Include="UI\" />
+    <Folder Include="Validators\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="clients.txt" />
+    <Content Include="movies.txt" />
+    <Content Include="rents.txt" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{83423815-8fd8-4d0c-a45f-22ddd35eb5a2}</ProjectGuid>
+    <ProjectHome>Inchiriere Filme2\</ProjectHome>
+    <StartupFile>app.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="films.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="app.py" />
+    <Compile Include="controller\clientController.py" />
+    <Compile Include="controller\filmController.py" />
+    <Compile Include="controller\rentController.py" />
+    <Compile Include="controller\testsClientController.py" />
+    <Compile Include="controller\testsFilmController.py" />
+    <Compile Include="controller\testsRentController.py" />
+    <Compile Include="controller\__init__.py" />
+    <Compile Include="domain\client\client.py" />
+    <Compile Include="domain\client\clientValidator.py" />
+    <Compile Include="domain\client\testsClient.py" />
+    <Compile Include="domain\client\__init__.py" />
+    <Compile Include="domain\film\film.py" />
+    <Compile Include="domain\film\filmValidator.py" />
+    <Compile Include="domain\film\testsFilm.py" />
+    <Compile Include="domain\film\__init__.py" />
+    <Compile Include="src\domain\rent\rent.py" />
+    <Compile Include="src\domain\rent\rentValidator.py" />
+    <Compile Include="src\domain\rent\testsRent.py" />
+    <Compile Include="src\domain\rent\__init__.py" />
+    <Compile Include="src\domain\__init__.py" />
+    <Compile Include="repository\clientRepository\clientRepository.py" />
+    <Compile Include="repository\clientRepository\testsClientRepository.py" />
+    <Compile Include="repository\clientRepository\__init__.py" />
+    <Compile Include="src\repository\filmRepository\filmRepository.py" />
+    <Compile Include="src\repository\filmRepository\testsFilmRepository.py" />
+    <Compile Include="src\repository\filmRepository\__init__.py" />
+    <Compile Include="src\repository\rentRepository\rentRepository.py" />
+    <Compile Include="src\repository\rentRepository\testsRentRepository.py" />
+    <Compile Include="src\repository\rentRepository\__init__.py" />
+    <Compile Include="src\repository\__init__.py" />
+    <Compile Include="ui\ui.py" />
+    <Compile Include="ui\__init__.py" />
+    <Compile Include="utils\utils.py" />
+    <Compile Include="utils\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="controller\" />
+    <Folder Include="domain\" />
+    <Folder Include="domain\client\" />
+    <Folder Include="domain\film\" />
+    <Folder Include="src\" />
+    <Folder Include="src\domain\" />
+    <Folder Include="src\domain\rent" />
+    <Folder Include="repository\" />
+    <Folder Include="repository\clientRepository\" />
+    <Folder Include="src\repository\" />
+    <Folder Include="src\repository\filmRepository" />
+    <Folder Include="src\repository\rentRepository" />
+    <Folder Include="ui\" />
+    <Folder Include="utils\" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>

@@ -1,0 +1,1 @@
+from Tests import tests_client_controller, tests_domain, tests_movie_controller, tests_rent_controller, tests_repository
